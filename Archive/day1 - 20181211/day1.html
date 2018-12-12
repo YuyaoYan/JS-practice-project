@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="./day1.js"></script>
+  </head>
+  <style>
+    .btn {
+      margin-bottom: 20px;
+      border: 1px solid #666;
+      padding: 20px;
+      width: 400px;
+      color: black;
+    }
+
+    .input-container {
+      padding: 40px;
+      border: 1px solid #169;
+      width: 400px;
+    }
+
+    .answer {
+      margin-top: 20px;
+    }
+  </style>
+
+  <body>
+    <div class="btn alertButton" onclick="actionClick(1)">
+      点击我会出现警告窗口(Alert)
+    </div>
+    <div class="btn" onclick="actionClick(2)">
+      点击我会在控制台打印出一行字：“今天天气真不错”
+    </div>
+    <div class="btn changeColorBtn" id="changeToRed" onclick="actionClick(3)">
+      点击我会我的字体会变红色
+    </div>
+    <div class="btn changeColorBtn" id="changeToGreen" onclick="actionClick(4)">
+      点击我会我的字体会变绿色
+    </div>
+    <div class="btn changeTextButton" onclick="actionClick(5)">
+      点击我，我的文字会变
+    </div>
+
+    <!-- 两个数的加法，结果会在answer div中显示，格式为 “ 答案是： xxx ” -->
+    <div class="input-container">
+      <input id="value1" type="text" placeholder="数字1" />
+      <input id="value2" type="text" placeholder="数字2" />
+      <button onclick="addFun()">提交</button> <br />
+      <div class="answer" id="addAnswer">答案是：</div>
+    </div>
+  </body>
+</html>
