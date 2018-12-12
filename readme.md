@@ -8,7 +8,7 @@
 | https://wangdoc.com/javascript/types/index.html <br/> 是关于Javascript的数据类型的，不太了解的同学可以学一下，<br/>了解的可以再温习一下 | Ex2: <br/>显示目前的时间
 <br/>更新时针、分针、秒针 |
 | 大家在看event的时候记得看一下代理和传播<br/>https://wangdoc.com/javascript/events/model.html                            |                                   |
-
+```JavaScript
 var myDate = new Date();
 
 myDate.getYear();        //获取当前年份(2位)
@@ -36,7 +36,7 @@ myDate.toLocaleDateString();     //获取当前日期
 var mytime=myDate.toLocaleTimeString();     //获取当前时间
 
 myDate.toLocaleString( );        //获取日期与时间
-
+```
  
 
 ### 2018-12-11
