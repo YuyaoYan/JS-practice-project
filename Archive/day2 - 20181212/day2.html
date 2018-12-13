@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <script>
+      var i = 1;
+      // 用普通的语句打印出 1 - 10
+      console.log("1,2,3,4,5,6,7,8,9,10");
+
+      // 用for循环在console里打印出 1 - 10
+      for (var k = 1; k <= 10; k++) {
+        console.log(k);
+      }
+      // 用while循环在console里打印出 1 - 10
+      function useWhile(j) {
+        while (j-- > 1) {
+          console.log(j);
+        }
+      }
+      useWhile(10);
+
+      // 用定时器在console里打印出 1 - 10 (setInterval)
+      for (var m = 1; m <= 10; m++) {
+        setInterval(console.log(m), 1000);
+      }
+
+      // 在console里打印当前时间
+      var currentTime = new Date();
+      console.log(currentTime.getTime());
+
+      // 在console里打印当前小时
+      console.log(currentTime.getHours());
+
+      // 在console里打印当前分钟
+      console.log(currentTime.getMinutes());
+
+      // 在console里打印当前秒
+      console.log(currentTime.getSeconds());
+
+      // 在console里打印当前日期（几号）
+      console.log(currentTime.getDate());
+
+      // 在console里打印当前月份
+      console.log(currentTime.getMonth());
+
+      // 在console里打印出现在是周几
+      console.log(currentTime.getDay() - 1);
+
+      // 在console里打印 5 / 4 的余数
+      console.log(5 % 4); // =>1
+
+      // 在console里打印 5 / 4 的四舍五入结果
+      var num1 = new Number(45.39);
+      console.log(num1.toFixed(1)); // =>45.4
+      Math.round(10 / 3); // =>3
+
+      // 在console里打印 5 / 4 的一位精确小数结果
+      // toExponential 科学记数法
+      var num2 = new Number(3.25);
+      console.log(num2.toExponential(1)); // =>3.3e+0
+    </script>
+  </body>
+</html>

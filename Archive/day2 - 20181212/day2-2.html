@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    .navbar {
+      width: 100%;
+      height: 40px;
+    }
+    .nav {
+      width: 10%;
+      height: 30px;
+      float: left;
+      display: flex;
+      border: 1px solid #666;
+      border-radius: 3px;
+      margin: 2px;
+      text-align: center;
+    }
+    .content {
+      width: 31%;
+      height: 230px;
+      <!-- background: pink; -->
+    }
+  </style>
+
+  <body>
+    <div class="navbar">
+      <div class="nav" target="change-iframe" onclick="fun1(1)">1</div>
+      <div class="nav" target="change-iframe" onclick="fun1(2)">2</div>
+      <div class="nav" target="change-iframe" onclick="fun1(3)">3</div>
+    </div>
+    <iframe id="div1Changed" name="change-iframe" class="content">xxx</iframe>
+  </body>
+</html>
+<script>
+  function fun1(a) {
+    if (a === 1) {
+      document.getElementById("div1Changed").src = "../day1/ex1/ex1.html";
+    } else if (a === 2) {
+      document.getElementById("div1Changed").src = "../day2/ex2/ex2.html";
+    } else if (a === 3) {
+      document.getElementById("div1Changed").src = "../day3/ex3/ex3.html";
+    } else {
+      console.log("none");
+    }
+  }
+</script>
