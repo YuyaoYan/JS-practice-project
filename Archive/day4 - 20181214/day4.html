@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array 操作练习</title>
+</head>
+<body>
+  <p><em>到 控制台 去看结果</em> 💁</p>
+  <script>
+    const inventors = [
+      { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
+      { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
+      { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
+      { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },
+      { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
+      { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
+      { first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
+      { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 },
+      { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 },
+      { first: 'Sarah E.', last: 'Goode', year: 1855, passed: 1905 },
+      { first: 'Lise', last: 'Meitner', year: 1878, passed: 1968 },
+      { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
+    ];
+
+    const flavours = ['Chocolate Chip', 'Kulfi', 'Caramel Praline', 'Chocolate', 'Burnt Caramel', 'Pistachio', 'Rose', 'Sweet Coconut', 'Lemon Cookie', 'Toffeeness', 'Toasted Almond', 'Black Raspberry Crunch', 'Chocolate Brownies', 'Pistachio Almond', 'Strawberry', 'Lavender Honey', 'Lychee', 'Peach', 'Black Walnut', 'Birthday Cake', 'Mexican Chocolate', 'Mocha Almond Fudge', 'Raspberry'];
+
+    const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'];
+
+    // {} 为 对象 格式， 对象有 key/键 跟 value/值
+    // 获取某对象的值的时候可以写成这样 
+    /* var David = {
+        birthdate: 1993,
+        gender: 'male',
+        married: false
+    }
+    var birthdayOfDavid = David.birthdate; // 或者是  var birthdayOfDavid = David["birthdate"];
+    */
+
+    // Array 资料
+    // https://wangdoc.com/javascript/types/array.html
+    // https://wangdoc.com/javascript/stdlib/array.html
+
+    // Array.prototype.filter()
+    // 1. 过滤出出生年份在 1500 的发明家
+
+    // Array.prototype.map()
+    // 2. 将所有发明家的姓名合并，中间以空格分割，并生成一个新的 Array 结果应如下所示： ['Albert Einstein'，'Isaac Newton', ...]
+
+    // Array.prototype.sort()
+    // 3. 将所有的发明家们按照 年龄 排序，从最老的到最年轻的
+
+    // Array.prototype.reduce()
+    // 4. 请问所有发明家们一共活了多少年？
+
+    // 5. 将所有的发明家们按照 活了多少年 排序，从最少的到最多的
+
+    // 6. 将所有口味中有杏仁的口味过滤出来(Almond flavours)
+
+    // 7. sort Exercise
+    // 按照姓氏来对 人们(people) 进行排序
+
+    // 8. Reduce Exercise
+    // 统计给出数组中 各个类型物品 的总数量
+    const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+  </script>
+</body>
+</html>
