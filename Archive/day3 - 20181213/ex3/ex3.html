@@ -2,52 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>动态改变样式</title>
+  <meta charset="UTF-8" />
+  <title>动态改变样式</title>
 </head>
 
 <body>
-    <h2>用<span class='hl'>JS</span>来改变样式</h2>
+  <h2>用<span class="hl">JS</span>来改变样式</h2>
 
-    <div class="controls">
-        <label for="spacing">间距:</label>
-        <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+  <div class="controls">
+    <label for="spacing">间距:</label>
+    <input type="range" name="spacing" id="spacing" min="10" max="200" value="10" data-sizing="px" />
 
-        <label for="blur">模糊度:</label>
-        <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+    <label for="blur">模糊度:</label>
+    <input type="range" name="blur" id="blur" min="0" max="25" value="10" data-sizing="px" />
 
-        <label for="base">主题色</label>
-        <input type="color" name="base" value="#ffc600">
-    </div>
+    <label for="base">主题色</label>
+    <input type="color" name="base" value="#ffc600" />
+  </div>
 
-    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
-    <!-- 照片可以换成自己喜欢的 -->
+  <!-- <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" /> -->
+  <img src="./1533897335.jpg" />
+  <!-- 照片可以换成自己喜欢的 -->
 
-    <style>
-        body {
-            text-align: center;
-        }
+  <style>
+    body {
+      text-align: center;
+    }
 
-        body {
-            background: #193549;
-            color: white;
-            font-family: 'helvetica neue', sans-serif;
-            font-weight: 100;
-            font-size: 50px;
-        }
+    body {
+      background: #193549;
+      color: white;
+      font-family: "helvetica neue", sans-serif;
+      font-weight: 100;
+      font-size: 50px;
+    }
 
-        .controls {
-            margin-bottom: 50px;
-        }
+    .controls {
+      margin-bottom: 50px;
+    }
 
-        input {
-            width: 100px;
-        }
-    </style>
+    input {
+      width: 100px;
+    }
 
-    <script>
-    </script>
+    img {
+      filter: blur(0px);
+    }
+  </style>
 
+  <script>
+    //添加监听事件获取range的值
+    document.getElementsByTagName("input")[0].addEventListener("click", getSpacing);
+    document.getElementsByTagName("input")[1].addEventListener("click", getBlur);
+    document.getElementsByTagName("input")[2].addEventListener("click", getTheme);
+
+    var images = document.getElementsByTagName("img")[0];
+    // console.log("images",images);
+
+    // 将获取到的值添加进样式中
+    function getBlur() {
+      // debugger;
+      var valueOfBlur = document.getElementById("blur").value;
+      console.log(valueOfBlur);
+      //加模糊效果   filter: blur(10px);
+      images.style.filter = "blur(" + (valueOfBlur) + "px)";
+    }
+    function getSpacing() {
+      // debugger;
+      var valueOfSpacing = document.getElementById("spacing").value;
+      console.log(valueOfSpacing);
+      //加图片padding
+      images.style.padding = "" + (valueOfSpacing) + "px";
+    }
+    function getTheme() {
+      // debugger
+      document.getElementsByTagName("input")[2].onchange = function () {
+        alert(this.value);
+        document.getElementsByTagName("body")[0].style.background =  this.value;
+      };
+    }
+
+  </script>
 </body>
 
 </html>

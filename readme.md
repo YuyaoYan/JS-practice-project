@@ -1,5 +1,12 @@
 Homework path: https://codesandbox.io/s/kmprr27ov7
 
+### 2018-12-14
+| Document Needs To Read | Practice File |
+| --- | --- |
+| Array 资料:
+       https://wangdoc.com/javascript/types/array.html
+      https://wangdoc.com/javascript/stdlib/array.html |  day4.html  |
+
 ### 2018-12-13
 
 | Document Needs To Read | Practice File |
@@ -23,12 +30,10 @@ document.querySelector()，document.querySelectorAll()<br/>
 document.getElementsByTagName()<br/>  
 document.getElementsByClassName()<br/>  
 document.getElementsByName()<br/>  
-document.getElementById() | Ex1: 要求：模拟一个打鼓的页面。用户在键盘上按下 ASDFGHJKL 这几个键时，页面上与字母对应的按钮变大变亮，对应的鼓点声音响起来。<br/>  
-思考：<br/>  
-1. 这个data-key的值能不能用别的方式获取到？<br/>  
-<br/>  
-2. 区分大小写的时候还有没有别的方法可以实现？<br/>  
-<br/>  
+document.getElementById() | Ex1: 要求：模拟一个打鼓的页面。用户在键盘上按下 ASDFGHJKL 这几个键时，页面上与字母对应的按钮变大变亮，对应的鼓点声音响起来。  
+-> 思考：
+1. 这个data-key的值能不能用别的方式获取到？
+2. 区分大小写的时候还有没有别的方法可以实现？
 3. class name中如果储存的是多个名称的情况下（而且你不确定里面都是哪些），可不可以用别的方式去除自己添加的类名？ |
 
 ### 2018-12-12
