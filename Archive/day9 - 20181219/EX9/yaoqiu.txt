@@ -1,0 +1,4 @@
+我们的目的是使网页模拟菜单的效果，在页面中添加新的菜品，而且在页面刷新之后也不清空。
+先去看exercise里的东西，再来做这个思路就会清晰
+
+localStorage: https://wangdoc.com/javascript/bom/storage.html
