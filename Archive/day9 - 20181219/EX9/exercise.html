@@ -11,13 +11,34 @@
     <script>
         // 今天来学习一下 localStorage 的使用
         // 同时，了解一下 JSON.stringify() 和 JSON.parse()
+        
+            window.localStorage.clear();
+            // 1. 储存一个 字符串 到 localstorage
+            window.localStorage.setItem('ddd','wew');
 
-        /*
-            1. 储存一个 字符串 到 localstorage
-            2. 储存一个 true/false 到 localstorage
-            3. 试着储存数组或者对象
-            4. 现在利用 JSON 的 methods 再次试着储存/获取
-        */
+            // 2. 储存一个 true/false 到 localstorage
+            window.localStorage.setItem('true/false',true);
+            // 3. 试着储存数组或者对象
+            var arr = [1,2,3,4,5,6];
+            var obj = {
+              ee:'w',
+              we:'w',
+            }
+            window.localStorage.setItem('arr',arr);
+            window.localStorage.setItem('obj',obj);
+            window.localStorage.setItem('obj2',{
+              ee:'w',
+              we:'w',
+            });
+
+            // 4. 现在利用 JSON 的 methods 再次试着储存/获取
+            
+
+            // 5. "Storage"监听事件
+            function onStroageChange(e){
+              console.log('e.newValue');
+            }
+            document.addEventListener('stroage',onStroageChange);
     </script>
 
 </body>

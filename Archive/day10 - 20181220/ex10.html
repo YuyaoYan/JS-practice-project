@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Shadow</title>
+</head>
+<body>
+
+  <div class="hero">
+    <h1 contenteditable>你瞅啥!</h1>
+  </div>
+
+  <style>
+  html {
+    color:black;
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .hero {
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+  }
+
+  h1 {
+    text-shadow: 10px 10px 0 rgba(0,0,0,1);
+    font-size: 100px;
+  }
+  </style>
+
+<script>
+    // 要求： 根据用户当前的鼠标位置来操纵文字阴影的位置。
+    /*
+        1. text-shadow: https://developer.mozilla.org/zh-CN/docs/Web/CSS/text-shadow
+        2. mousemove:https://wangdoc.com/javascript/events/mouse.html#navbar
+        3. offset:https://wangdoc.com/javascript/dom/element.html#elementoffsetleft%EF%BC%8Celementoffsettop
+    */
+</script>
+</body>
+</html>

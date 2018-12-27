@@ -1,0 +1,77 @@
+/*公共样式--*/
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+*{box-sizing: border-box;}
+html, body {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+    font-size:14px;
+    color:#333;
+}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+ul,ol {
+    list-style: none;
+}
+.layout {
+	width: 600px;
+	height: 600px;
+	text-align: center;
+	margin: 0 auto;
+}
+.content{
+	width: 400px;
+	height: 500px;
+	margin: 0 auto;
+}
+.clear{
+	display: block;
+	clear: both;
+	content: "";
+	overflow: hidden;	
+}
+.content_two ul{
+	width: 300px;
+	height: 200px;
+}
+.content_last ul{
+	width: 200px;
+	height: 200px;
+}
+.float{
+	float: left;
+}
+.square{
+	width: 100px;
+	height: 100px;
+}
+.recta{
+	width: 200px;
+	height: 100px;
+}
+.obl{
+	width: 100px;
+	height: 200px;
+}
+.blue{
+	background: blue;
+}
+.red{
+	background: red;
+}
+.green{
+	background: green;
+}
+.magenta{
+	background: magenta;
+}
+.yellow{
+	background: yellow;
+}
+.coral{
+	background: coral;
+}
