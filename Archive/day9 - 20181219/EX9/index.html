@@ -16,12 +16,12 @@
   <div class="wrapper">
     <h2>LOCAL TAPAS</h2>
     <p></p>
-    <ul class="plates">
+    <ul class="plates" id="plates">
       <li>Loading Tapas...</li>
     </ul>
-    <form class="add-items">
+    <form class="add-items" onsubmit="return submitCheck();">
       <input type="text" name="item" placeholder="Item Name" required>
-      <input type="submit" value="+ Add Item">
+      <input type="submit" value="+ Add Item" >
     </form>
   </div>
 
@@ -29,9 +29,31 @@
   const addItems = document.querySelector('.add-items');
   const itemsList = document.querySelector('.plates');
   const items = [];
+  
+  function submitCheck (){
+    var last = document.getElementsByTagName('input')[0].value;
+    items.push(last);
+    window.sessionStorage.setItem('str',JSON.stringify(items));
+    document.onsubmit = function (event){
+      event.preventDefault();
+    };
 
+    var docfrag = document.createDocumentFragment();
+
+    items.forEach(function (e) {
+      var li = document.createElement('li');
+      li.textContent = e;
+      docfrag.appendChild(li);  //将存储在内存中的li标签剪切到ul之中
+    });
+    var plates = document.getElementById("plates");// 在这里创建一个ul标签
+    while(plates.hasChildNodes()) //当elem下还存在子节点时 循环继续
+    {
+      plates.removeChild(plates.firstChild);
+    }
+    plates.appendChild(docfrag);
+    document.getElementsByTagName('input')[0].value = '';
+  }
+  
 </script>
-
-
 </body>
 </html>
